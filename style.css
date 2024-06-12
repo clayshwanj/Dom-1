@@ -62,12 +62,11 @@ header {
   gap: 25px;
 }
 .Tab {
-  width: 400px;
+  width: 900px;
   background-color: burlywood;
   color: aliceblue;
   position: fixed;
   inset: 0 0 0 auto;
-  display: none;
 }
 .Tab h1 {
   padding: 20px;
@@ -95,12 +94,17 @@ header {
   background-color: hsl(0, 0%, 3%);
   color: azure;
 }
-#items {
+.list {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-row: auto auto;
 }
-#quant {
-  padding-left: 300px;
+.item {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+.not-liked {
+  color: white;
+}
+.liked {
+  color: red;
 }

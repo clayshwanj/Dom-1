@@ -140,11 +140,62 @@
     <!-- Shopping Cart -->
     <div class="Tab">
       <h1>Shopping Cart</h1>
-      <div id="items">
-        <span id="added">Item</span>
-        <span id="quant">Quantity</span>
+      <div class="list">
+        <div class="item">
+          <img
+            src="Shopc images/Fresh shawarma isolated.jpg"
+            alt="shawarma"
+            style="width: 55px"
+          />
+          <h6>Shawarma</h6>
+          <small class="price">Ksh 650</small>
+          <small class="description">Spicy for savoury cravings.</small>
+          <div>
+            <span>+</span>
+          </div>
+          <div class="count">0</div>
+          <div>
+            <span>-</span>
+          </div>
+          <div>
+            <svg
+              id="like-button"
+              class="not-liked"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"
+              />
+            </svg>
+          </div>
+
+          <div>
+            <svg
+              class="dust-bin"
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 7h14m-9 3v8m4-8v8M10 3h4a1 1 0 0 1 1 1v3H9V4a1 1 0 0 1 1-1ZM6 7h12v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7Z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
-      <div class="list-items"></div>
       <div class="checkout">
         <button id="total">0</button>
         <button id="close">Close</button>
