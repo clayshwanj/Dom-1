@@ -12,9 +12,6 @@ function displayTab() {
 let iconcart = document.querySelector(".iconcart");
 iconcart.addEventListener("click", displayTab);
 
-let totalElement = document.getElementById("total");
-let total = totalElement.innerText;
-total = parseInt(total);
 document.addEventListener("DOMContentLoaded", () => {
   const totalButton = document.getElementById("total");
 
@@ -61,23 +58,14 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTotal();
   }
 
-  // function deleteItem() {
-  //   const deletion = document.querySelector(".dust-bin");
-  //   deletion.addEventListener("click", () => {
-  //     let itemElement = document.querySelector(".item");
-  //     if (itemElement) {
-  //       itemElement.remove();
-  //     }
-  //   });
-  //   updateTotal();
-  // }
-
   // Function to handle liking items
   function toggleLike() {
-    const likeButton = document.getElementById("like-button");
+    const likeButtons = document.querySelectorAll(".like-button");
 
-    likeButton.addEventListener("click", () => {
-      likeButton.classList.toggle("liked");
+    likeButtons.forEach((likeButton) => {
+      likeButton.addEventListener("click", () => {
+        likeButton.classList.toggle("liked");
+      });
     });
   }
 
